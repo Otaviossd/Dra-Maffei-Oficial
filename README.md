@@ -50,9 +50,10 @@ Para testar a miniatura antes de divulgar:
 
 Tudo está em `index.html`, em espanhol.
 
-- **Telefones**: procure por `wa.me/` — são 12 ocorrências
+- **Telefones**: procure por `wa.me/` (11 ocorrências)
 - **Sedes**: procure por `class="loc"`
-- **Tratamentos**: procure por `class="tcard"`
+- **Dermatologia médica**: procure por `class="mcard"`
+- **Estética**: procure por `class="arow"`
 - **Perguntas frequentes**: procure por `class="qa"`
 
 ---
