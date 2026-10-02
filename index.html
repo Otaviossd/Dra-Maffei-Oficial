@@ -7,14 +7,14 @@
 <meta name="theme-color" content="#F7F3EE">
 <meta name="supported-color-schemes" content="light">
 <title>Dra. Gabriela Mafei | Dermatóloga en Ciudad del Este</title>
-<meta name="description" content="Dra. Gabriela Mafei, médica cirujana especialista en Dermatología en Ciudad del Este y Hernandarias. Consulta dermatológica, cirugía de piel, control de lunares y tratamientos estéticos.">
+<meta name="description" content="Dra. Gabriela Mafei, médica cirujana especialista en Medicina Interna y Dermatología en Ciudad del Este y Hernandarias. Consulta dermatológica, cirugía de piel, control de lunares y tratamientos estéticos.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238A6134'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='600' fill='%23F7F3EE' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238A6134'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='600' fill='%23F7F3EE' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_PY">
 <meta property="og:site_name" content="Dra. Gabriela Mafei">
 <meta property="og:title" content="Dra. Gabriela Mafei | Dermatóloga en Ciudad del Este">
-<meta property="og:description" content="Médica cirujana especialista en Dermatología. Consulta dermatológica, cirugía de piel, control de lunares y tratamientos estéticos.">
+<meta property="og:description" content="Médica cirujana especialista en Medicina Interna y Dermatología. Consulta dermatológica, cirugía de piel, control de lunares y tratamientos estéticos.">
 <meta property="og:image" content="/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -133,7 +133,7 @@ section{padding:64px 0;background:#F7F3EE;}
 
 /* medical cards */
 .mgrid{display:grid;grid-template-columns:1fr;gap:14px;}
-.mcard{background:#fff;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:10px;transition:transform .3s,box-shadow .3s;}
+.mcard{background:#fff;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh);display:flex;flex-direction:column;align-items:flex-start;gap:10px;width:100%;text-align:left;font:inherit;color:inherit;transition:transform .3s,box-shadow .3s;}
 .mcard .ic{width:50px;height:50px;background:#E9E1D8;}
 .mcard .ic svg{width:23px;height:23px;}
 .mcard h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;line-height:1.15;margin-top:4px;}
@@ -220,8 +220,8 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
   .hero-media{margin-top:0;}
   .hero-shot{aspect-ratio:4/5;}
   .pgrid{grid-template-columns:1fr 1fr;gap:14px;}
-  .path{grid-template-columns:repeat(3,1fr);gap:14px;}
-  .mgrid{grid-template-columns:repeat(3,1fr);gap:14px;}
+  .path{grid-template-columns:1fr 1fr;gap:14px;}
+  .mgrid{grid-template-columns:1fr 1fr;gap:14px;}
   .mcard{padding:26px 20px;}
   .about-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center;}
   .about-shot{margin-bottom:0;}
@@ -245,10 +245,10 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
   .pillars{padding:24px 0 56px;}
   .pgrid{grid-template-columns:repeat(4,1fr);gap:18px;}
   .pillar{flex-direction:column;}
-  .path{gap:18px;}
+  .path{grid-template-columns:repeat(4,1fr);gap:18px;}
   .pstep{padding:30px 28px;}
   .note{padding:28px 32px;align-items:center;}
-  .mgrid{gap:18px;}
+  .mgrid{grid-template-columns:repeat(4,1fr);gap:18px;}
   .mcard{padding:32px 28px;}
   .mcard:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);}
   .about-inner{gap:72px;}
@@ -305,12 +305,12 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
   <div class="wrap">
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="kick fade" id="hk">Médica cirujana, especialista en Dermatología</p>
+        <p class="kick fade" id="hk">Médica cirujana, especialista en Medicina Interna y Dermatología</p>
         <h1 class="serif">
           <span class="ln"><span>Dermatóloga</span></span>
           <span class="ln"><span><em>en Ciudad del&nbsp;Este</em></span></span>
         </h1>
-        <p class="hero-sub fade" id="hs">Soy médica especialista en la piel. Atiendo problemas de la piel, el pelo y las uñas, hago cirugías dermatológicas y también tratamientos estéticos, siempre con criterio médico.</p>
+        <p class="hero-sub fade" id="hs">Soy médica internista especializada en Dermatología. Atiendo problemas de piel, pelo y uñas, hago cirugías dermatológicas y también tratamientos estéticos, siempre con criterio médico.</p>
         <div class="hero-btns fade" id="hb">
           <button class="btn btn-gold" data-go="#sedes">Agendá tu turno</button>
           <button class="btn btn-out" data-go="#dermatologia">Ver especialidades</button>
@@ -331,7 +331,7 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
 <div class="pillars">
   <div class="wrap">
     <div class="pgrid rv">
-      <div class="pillar"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5v2.5a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="1.8"/></svg></span><div><h3>Médica especialista</h3><p>Primero Medicina, después la especialización en Dermatología.</p></div></div>
+      <div class="pillar"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5v2.5a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="1.8"/></svg></span><div><h3>Médica especialista</h3><p>Primero medicina, después dos especializaciones: Medicina Interna y Dermatología.</p></div></div>
       <div class="pillar"><span class="ic"><svg viewBox="0 0 24 24"><path d="m4 20 9.5-9.5"/><path d="m13.5 10.5 3-3a2.1 2.1 0 0 1 3 3l-3 3"/><path d="m11 13 2 2"/></svg></span><div><h3>Cirugía dermatológica</h3><p>Extracción de quistes, lunares y otras lesiones de la piel.</p></div></div>
       <div class="pillar"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/><circle cx="10.5" cy="10.5" r="2"/></svg></span><div><h3>Prevención</h3><p>Control de lunares para detectar a tiempo el cáncer de piel.</p></div></div>
       <div class="pillar"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3.5 3.6 5.5 6.4 5.5 9.2a5.5 5.5 0 0 1-11 0C6.5 9.4 8.5 6.6 12 3Z"/></svg></span><div><h3>Estética con criterio</h3><p>Tratamientos estéticos hechos por una médica.</p></div></div>
@@ -345,12 +345,13 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
     <div class="head rv">
       <p class="kick">Lo que mucha gente no sabe</p>
       <h2 class="serif">El dermatólogo <em>es médico</em></h2>
-      <p>Para ser dermatóloga primero hay que recibirse de médica. Después vienen años de especialización dedicados solo a la piel, con práctica en hospital.</p>
+      <p>Para ser dermatóloga primero hay que recibirse de médica. Luego, especializarse en Clínica Médica. Después vienen años de residencia dedicándonos a la piel y las enfermedades relacionadas a ella, con prácticas en hospitales.</p>
     </div>
     <div class="path rv">
       <div class="pstep"><span class="n">1</span><h3>Carrera de Medicina</h3><p>La base: cómo funciona todo el cuerpo, cómo se diagnostica y cómo se trata.</p></div>
-      <div class="pstep"><span class="n">2</span><h3>Especialización en Dermatología</h3><p>Años de estudio y práctica en enfermedades de la piel, el pelo y las uñas.</p></div>
-      <div class="pstep"><span class="n">3</span><h3>Tu consulta</h3><p>Diagnóstico, tratamiento, cirugía y seguimiento con la misma médica.</p></div>
+      <div class="pstep"><span class="n">2</span><h3>Especialización en Medicina Interna</h3><p>Mirar al paciente de manera integral, identificar posibles enfermedades y elegir el tratamiento más adecuado. Experiencia para atender distintos tipos de enfermedades y resolver situaciones médicas complejas.</p></div>
+      <div class="pstep"><span class="n">3</span><h3>Especialización en Dermatología</h3><p>Años de estudio y prácticas exclusivamente dedicados a diagnosticar y tratar enfermedades de piel, pelo y uñas.</p></div>
+      <div class="pstep"><span class="n">4</span><h3>Tu consulta</h3><p>Escuchar, ver, tocar, diagnosticar y tratar tu condición, considerando tus características individuales.</p></div>
     </div>
     <div class="note rv">
       <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><circle cx="12" cy="16.3" r=".6" fill="#D9BE97"/></svg></span>
@@ -389,6 +390,12 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
         <p>Revisión con dermatoscopio para encontrar a tiempo cualquier cambio sospechoso. Lo ideal es una vez al año.</p>
         <span class="go">Consultar por WhatsApp</span>
       </a>
+      <button class="mcard" data-go="#estetica">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3.5 3.6 5.5 6.4 5.5 9.2a5.5 5.5 0 0 1-11 0C6.5 9.4 8.5 6.6 12 3Z"/></svg></span>
+        <h3>Procedimientos estéticos</h3>
+        <p>Bioestimulación, ojeras, bótox, relleno de labios y limpieza de cutis. Los mismos tratamientos, con criterio médico.</p>
+        <span class="go">Ver procedimientos estéticos</span>
+      </button>
     </div>
   </div>
 </section>
@@ -401,12 +408,12 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
       <div class="about-txt rv">
         <p class="kick">Sobre mí</p>
         <h2 class="serif">Dra. Gabriela <em>Mafei</em></h2>
-        <p>Soy médica cirujana, especialista en Dermatología. Atiendo en Ciudad del Este y en Hernandarias.</p>
-        <p>Mi forma de trabajar es simple: primero entender qué tiene tu piel y después elegir el tratamiento. Uso equipos de última generación y productos de primera calidad, porque el resultado depende de quién hace el tratamiento y también de con qué se hace.</p>
+        <p>Soy médica cirujana. Estudié medicina en la Universidad Nacional del Este, hice mis especialidades en la Universidad Católica de Asunción y en la Universidad Nacional de Asunción. También hice cursos de perfeccionamiento en México y España. Soy hernandariense y atiendo en CDE y Hernandarias.</p>
+        <p>Mi forma de trabajar es simple: primero entender qué tiene tu piel y después elegir el tratamiento. Uso equipos y productos de primera calidad, porque el resultado depende de quién hace el tratamiento y también de con qué se hace.</p>
         <p>No hago tratamientos por moda. Hago lo que tu piel necesita.</p>
         <div class="facts">
           <div><b>Título</b><span>Médica cirujana</span></div>
-          <div><b>Especialidad</b><span>Dermatología clínica, quirúrgica y estética</span></div>
+          <div><b>Especialidades</b><span>Medicina Interna y Dermatología</span></div>
           <div><b>Atiende en</b><span>Sanatorio San José, Sanatorio Costanera y Fundación Tesãi</span></div>
         </div>
       </div>
@@ -452,11 +459,11 @@ footer{background:#382C24;color:#F7F3EE;padding:52px 0 104px;text-align:center;}
       <h2 class="serif">Lo que más <em>me preguntan</em></h2>
     </div>
     <div class="faq rv" id="faq">
-      <div class="qa"><button>¿El dermatólogo es médico?</button><div class="ans"><p>Sí. Primero se estudia Medicina y después la especialización en Dermatología. Por eso el dermatólogo puede diagnosticar y tratar enfermedades de la piel, el pelo y las uñas, operar y también hacer tratamientos estéticos.</p></div></div>
+      <div class="qa"><button>¿El dermatólogo es médico?</button><div class="ans"><p>Sí. Primero se estudia Medicina y después se hace la especialización. En mi caso son dos: Medicina Interna y Dermatología. Por eso puedo diagnosticar y tratar enfermedades de la piel, el pelo y las uñas, operar y también hacer tratamientos estéticos.</p></div></div>
       <div class="qa"><button>¿Cada cuánto tengo que ir al dermatólogo?</button><div class="ans"><p>Lo ideal es un control una vez al año, sobre todo para revisar los lunares. Y siempre que notes algo nuevo: una mancha o un lunar que cambió, acné que no mejora o una picazón que no se va.</p></div></div>
       <div class="qa"><button>¿Cómo es la cirugía de un quiste o un lunar?</button><div class="ans"><p>Es una cirugía menor. En general se hace con anestesia local, dura poco y te vas a tu casa el mismo día. En la consulta te explico todo antes.</p></div></div>
       <div class="qa"><button>¿Por qué la bioestimulación no se ve enseguida?</button><div class="ans"><p>Porque no rellena: estimula a tu piel para que vuelva a producir colágeno, y eso lleva tiempo. Los primeros cambios aparecen alrededor de la sexta semana y el resultado completo, cerca del tercer mes.</p></div></div>
-      <div class="qa"><button>¿Por qué cuesta más que en otros lugares?</button><div class="ans"><p>Porque lo hace una médica especialista y porque uso productos originales de primera calidad y equipos de última generación. Además, cada tratamiento incluye la consulta y el seguimiento.</p></div></div>
+      <div class="qa"><button>¿Por qué cuesta más que en otros lugares?</button><div class="ans"><p>Porque lo hace una médica especialista y porque uso equipos y productos originales de primera calidad. Además, cada tratamiento incluye la consulta y el seguimiento.</p></div></div>
       <div class="qa"><button>¿Cómo saco turno?</button><div class="ans"><p>En el Sanatorio San José y en el Sanatorio Costanera, por WhatsApp. En la Fundación Tesãi, por la página de turnos de la Fundación.</p></div></div>
     </div>
   </div>
