@@ -203,9 +203,6 @@ footer{background:#3F312A;color:#F2E7E3;padding:52px 0 104px;text-align:center;}
 .credit .ig svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.6;}
 
 /* sticky mobile cta */
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(242,231,227,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--hair);transform:translateY(130%);transition:transform .4s cubic-bezier(.3,.8,.3,1);}
-.dock.up{transform:none;}
-.dock .btn{width:100%;}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(22px);}
@@ -255,8 +252,7 @@ footer{background:#3F312A;color:#F2E7E3;padding:52px 0 104px;text-align:center;}
   .about-inner{gap:72px;}
   .aes-inner{gap:40px;}
   .loc{padding:28px 26px;}
-  .dock{display:none;}
-  footer{padding-bottom:52px;}
+    footer{padding-bottom:52px;}
 }
 @media (prefers-color-scheme:dark){
   html,body,section,.pillars,.drawer{background:#F2E7E3;color:#3F312A;}
@@ -504,13 +500,12 @@ footer{background:#3F312A;color:#F2E7E3;padding:52px 0 104px;text-align:center;}
   </div>
 </footer>
 
-<div class="dock" id="dock"><a class="btn btn-gold" href="https://wa.me/595984117550?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20la%20Dra.%20Gabriela%20Mafei%20y%20quisiera%20agendar%20un%20turno." target="_blank" rel="noopener">Agendá tu turno por WhatsApp</a></div>
 
 <script>
 (function(){
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var nav=document.getElementById('nav'), burger=document.getElementById('burger'),
-      drawer=document.getElementById('drawer'), dock=document.getElementById('dock');
+      drawer=document.getElementById('drawer');
 
   function closeDrawer(){drawer.classList.remove('open');burger.classList.remove('x');burger.setAttribute('aria-expanded','false');}
   burger.addEventListener('click',function(){
@@ -529,7 +524,7 @@ footer{background:#3F312A;color:#F2E7E3;padding:52px 0 104px;text-align:center;}
     e.preventDefault(); goTo(t.getAttribute('data-go')); closeDrawer();
   },true);
 
-  function onScroll(){var y=window.pageYOffset;nav.classList.toggle('stuck',y>20);dock.classList.toggle('up',y>560);}
+  function onScroll(){var y=window.pageYOffset;nav.classList.toggle('stuck',y>20);}
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
   /* FAQ */
